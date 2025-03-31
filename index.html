@@ -3,117 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>City Of Refuge Family Chapel Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="C:\Users\USER\Desktop\nesar\CFGTTT.ico" type="image/png"> <!-- Add this line to embed your icon -->
+    <title>Engagement Invitation</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&display=swap');
+
         body {
+            background-color: #FFDAB9; /* Peach color */
+            font-family: 'Aleo', serif;
             text-align: center;
-            background-image: url('C:\\Users\\USER\\Desktop\\nesar\\j.jpeg');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            color: black;
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
-        }
-
-        /* Styles for the logo to make it fixed at top left corner */
-        .logo {
-            position: fixed;
-            top: 0;
-            left: 0;
-            padding: 10px; /* Add padding for some spacing */
-            z-index: 100; /* Ensure the logo is above other content */
-        }
-        .logo img {
-            width: 100px; /* Adjust width as needed */
-            height: auto; /* Maintain aspect ratio */
-        }
-
-        header {
-            padding: 20px;
-            margin: 0 auto;
-        }
-
-        nav ul {
-            list-style-type: none;
             margin: 0;
             padding: 0;
-            overflow: hidden;
-            background-color: #333;
+            position: relative;
+            overflow: auto;
+            padding-bottom: 50px; /* Prevent content overlap with footer */
         }
-        nav li {
-            float: left;
+        .content {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            margin-top: 20px;
+            border-radius: 15px;
+            display: inline-block;
+            position: relative;
+            z-index: 2;
+            width: 60%;
+            max-height: 500px;
+            overflow-y: auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
-        nav li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
+        .scrollable-content {
+            max-height: 300px;
+            overflow-y: auto;
+            overflow-x: auto;
+            padding: 10px;
         }
-        nav li a:hover {
-            background-color: #111;
+        h1, h2 {
+            color: #D2691E; /* Chocolate color */
+            font-size: 28px;
+            font-weight: 700;
         }
-
-        /* Styles for the woman singing image */
-        .singer {
+        p, li {
+            font-size: 18px;
+            color: #444;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #8B4513;
+            position: relative;
+        }
+        .footer {
+            font-size: 14px;
+            color: #333;
             position: fixed;
-            top: 50;
-            right: 50;
-            width: 50px; /* Adjust width as needed */
-            z-index: 100; /* Ensure the image is below other content */
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+        }
+        .rotating-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #8B0000;
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            animation: moveAround 10s linear infinite;
+        }
+        @keyframes moveAround {
+            0% { top: 10%; left: 10%; transform: rotate(0deg); }
+            25% { top: 40%; left: 80%; transform: rotate(90deg); }
+            50% { top: 70%; left: 50%; transform: rotate(180deg); }
+            75% { top: 30%; left: 20%; transform: rotate(270deg); }
+            100% { top: 10%; left: 10%; transform: rotate(360deg); }
         }
     </style>
-</head>
+    <script>
+        function detectScreenSize() {
+            console.log("Screen Width: " + window.innerWidth + "px, Screen Height: " + window.innerHeight + "px");
+        }
+        window.onload = detectScreenSize;
+        window.onresize = detectScreenSize;
+    </script>
+  </head>
 <body>
-    <header>
-        <h1>Welcome to City Of Refuge Family Chapel</h1>
-    </header>
-    
-    <div class="logo">
-        <img src="C:\Users\USER\Desktop\nesar\CFGTTT.png" alt="Church Logo">
+  
+    <div class="rotating-text">FORSTRAH25</div>
+    <div class="rotating-text" style="animation-duration: 12s;">FORSTRAH25</div>
+    <div class="rotating-text" style="animation-duration: 14s;">FORSTRAH25</div>
+    <div class="rotating-text" style="animation-duration: 16s;">FORSTRAH25</div>
+   <div class="rotating-text" style="animation-duration: 18s;">FORSTRAH25</div>  
+      <div class="content">
+        <h1>ORDER OF MARRIAGE CEREMONY</h1>
+        <h2>ENGAGEMENT (THE TAMBO & LOMOTEY FAMILY)</h2>
+        <p><span class="highlight">Time ⌚:</span> 8:30 AM</p>
+        <p><span class="highlight">Date 📆:</span> 05/04/2025</p>
+        <p><span class="highlight">Guests:</span> Bride 👰, Groom 🤵, Family, and Church Officials Only</p>
     </div>
-
-    <nav>
+    
+    <div class="content scrollable-content">
+        <h1>RECEPTION</h1>
+        <p><span class="highlight">Venue 📍:</span> Adiembra Type B, Opposite Housing</p>
+        <p><span class="highlight">Dress Code 👗👔:</span> Peach, Purple, White</p>
+        <p><span class="highlight">Guests:</span> Friends, Family, Staff, Church Associates & All Well-Wishers are Welcome</p>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#music">Music</a></li>
+            <li><strong>Guest Arrival</strong></li>
+            <li><strong>Opening Prayer:</strong> Mrs. Yvonne Obeng Aboagye</li>
+            <li><strong>Welcome Speech:</strong> MC: Mr. Isaac Mintah</li>
+            <li><strong>Bridal Entrance:</strong> (Accompanied by music & applause)</li>
+            <li><strong>Purpose of Gathering:</strong> Mr. Samuel Nii Boye Lomotey</li>
+            <li><strong>Introduction of Chairperson:</strong> Miss Delina Nimo</li>
+            <li><strong>Musical Interlude</strong></li>
+            <li><strong>First Dance:</strong> (Bride & Groom)</li>
+            <li><strong>Cake Cutting:</strong> Rev. Mrs. Grace Adomakoh</li>
+            <li><strong>Champagne Popping 🥂</strong></li>
+            <li><strong>Toast:</strong> Mr. Frederick Nii Lomotey</li>
+            <li><strong>Toast:</strong> Dr. Elliot Anyidoho</li>
+            <li><strong>Toast:</strong> Mr. Michael Lomotey</li>
+            <li><strong>Toast:</strong> Mr. Johnson Anyidoho</li>
+            <li><strong>Special Solo Performance:</strong> Mrs. Emmanuella Osei</li>
+            <li>✅ Cocktail Bar Opens</li>
+            <li><strong>Entertainment & Music</strong></li>
+            <li><strong>Vote of Thanks:</strong> Mrs. Esther Tse</li>
         </ul>
-    </nav>
-    
-    <section id="home">
-        <h2>Home</h2>
-        <p>Welcome to our warm virtual abode. Find peace, solace, and inspiration as you journey through our digital sanctuary.</p>
-    </section>
-
-    <section id="about">
-        <h2>About</h2>
-        <p>Discover the heart of our community, our mission, and the rich tapestry of stories that make us who we are.</p>
-    </section>
-
-    <section id="events">
-        <h2>Events</h2>
-        <p>Stay tuned for upcoming gatherings, celebrations, and opportunities to connect with fellow members of our church family.</p>
-    </section>
-
-    <section id="music">
-        <h2>Music</h2>
-        <audio controls>
-            <source src="C:\Users\USER\Desktop\nesar\Joyce Blessing - Victory (Official Music Video).mp3" type="audio/mpeg">
-        </audio>
-        <p>Experience the soul-stirring hymns and melodies that elevate our spirits and carry our voices in harmony.</p>
-    </section>
-
-    <div class="singer">
-        <img src="C:\Users\USER\Desktop\nesar\download.png" alt="Woman Singing with Microphone">
     </div>
-
-    <footer>
-        <p>&copy; 2024 CORFC | All Rights Reserved</p>
-    </footer>
+    
+    <div class="footer">Created by: Tambo Forster (Groom) | All Rights Reserved 2025</div>
 </body>
 </html>
