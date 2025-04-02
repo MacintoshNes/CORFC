@@ -8,14 +8,14 @@
         @import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&display=swap');
 
         body {
-            background-color: #FFDAB9; /* Peach color */
+            background-color: #F4C6A1; /* Peach background */
             font-family: 'Aleo', serif;
             text-align: center;
             margin: 0;
             padding: 0;
             position: relative;
             overflow: auto;
-            padding-bottom: 50px; /* Prevent content overlap with footer */
+            padding-bottom: 100px; /* Increase padding for footer */
         }
         .content {
             padding: 20px;
@@ -37,7 +37,7 @@
             padding: 10px;
         }
         h1, h2 {
-            color: #D2691E; /* Chocolate color */
+            color: #3b5998; /* Facebook Blue */
             font-size: 28px;
             font-weight: 700;
         }
@@ -47,40 +47,50 @@
         }
         .highlight {
             font-weight: bold;
-            color: #8B4513;
-            position: relative;
+            color: #3b5998;
         }
         .footer {
-            font-size: 14px;
-            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            color: #444;
+            padding: 10px 20px;
             position: fixed;
             bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 0;
             width: 100%;
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 10px 0;
-            text-align: center;
+            height: 60px;
             box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-            font-weight: bold;
-            white-space: pre-line;
         }
-        .rotating-text {
-            font-size: 24px;
-            font-weight: bold;
-            color: #8B0000;
-            position: absolute;
-            width: 100px;
-            height: 50px;
-            animation: moveAround 10s linear infinite;
+        .footer img {
+            height: 40px;
+            width: auto;
         }
-        @keyframes moveAround {
-            0% { top: 10%; left: 10%; transform: rotate(0deg); }
-            25% { top: 40%; left: 80%; transform: rotate(90deg); }
-            50% { top: 70%; left: 50%; transform: rotate(180deg); }
-            75% { top: 30%; left: 20%; transform: rotate(270deg); }
-            100% { top: 10%; left: 10%; transform: rotate(360deg); }
-        } 
+        .footer-text {
+            font-size: 16px;
+            color: #888;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+        }
+        .buttons div {
+            display: inline-block;
+            text-align: center;
+        }
+        .buttons img {
+            height: 40px;
+            width: auto;
+        }
+        .buttons span {
+            font-size: 16px;
+            color: #3b5998;
+            margin-top: 5px;
+            display: block;
+        }
     </style>
     <script>
         function detectScreenSize() {
@@ -89,15 +99,10 @@
         window.onload = detectScreenSize;
         window.onresize = detectScreenSize;
     </script>
-  </head>
+</head>
 <body>
   
-    <div class="rotating-text">FORSTRAH25</div>
-    <div class="rotating-text" style="animation-duration: 12s;">FORSTRAH25</div>
-    <div class="rotating-text" style="animation-duration: 14s;">FORSTRAH25</div>
-    <div class="rotating-text" style="animation-duration: 16s;">FORSTRAH25</div>
-   <div class="rotating-text" style="animation-duration: 18s;">FORSTRAH25</div>  
-      <div class="content">
+    <div class="content">
         <h1>ORDER OF MARRIAGE CEREMONY</h1>
         <h2>ENGAGEMENT (THE TAMBO & LOMOTEY FAMILY)</h2>
         <p><span class="highlight">Time ⌚:</span> 8:30 AM</p>
@@ -125,7 +130,7 @@
             <li><strong>Toast:</strong> Mr. Frederick Nii Lomotey</li>
             <li><strong>Toast:</strong> Dr. Elliot Anyidoho</li>
             <li><strong>Toast:</strong> Miss. Akortsu Sarah</li>
-             <li><strong>Toast:</strong> Hon. Eld. Alfred Amenyo</li>
+            <li><strong>Toast:</strong> Hon. Eld. Alfred Amenyo</li>
             <li><strong>Toast:</strong> Mr. Christian Tutu</li>
             <li><strong>Toast:</strong> Mr. Frederick Afful</li>
             <li><strong>Toast:</strong> Mrs. Emmanuella Osei</li>
@@ -146,45 +151,64 @@
             <li><strong>Toast:</strong> Yet to be added</li>
             <li><strong>Toast:</strong> Yet to be added</li>
             <li><strong>Toast:</strong> Yet to be added</li>
-            <h2>Special Performances & Activities</h2>
-<ul>
-    <li><strong>Special Solo Performance:</strong> Mrs. Emmanuella Osei</li>
-    <li>✅ Cocktail Bar Opens</li>
-    <li><strong>Entertainment & Music</strong></li>
-    <li><strong>Vote of Thanks:</strong> Mrs. Esther Tse</li>
-</ul>
+        </ul>
 
-<h2>Order of Photography</h2>
-<ul>
-    <li>Bridal Team</li>
-    <li>Bride & Groom with Both Families</li>
-    <li>Bride & Groom with Church Officials</li>
-    <li>Both Families Together</li>
-    <li>Members of the Church of Pentecost (Sekondi)</li>
-    <li>Members of the Church of Pentecost (Bumbula)</li>
-    <li>Members of Christian Faith Church (Adiembra)</li>
-    <li>Staff of Sekondi Presby Basic Schools</li>
-    <li>Staff of Obinnyimokyena D.A. School</li>
-    <li>Mega Church Choir (Adiembra CFCI)</li>
-    <li>Hopsan 2022 Batch</li>
-    <li>Francan 2020 Batch</li>
-    <li>Nesmac-S-Tech-Press-Consult Associates</li>
-    <li>Friends of the Groom</li>
-    <li>Friends of the Bride</li>
-    <li>Bride with Siblings</li>
-    <li>Groom with Family</li>
-    <li>Groom with Sister & Mother</li>
-    <li>Bride with Sister & Mother</li>
-    <li>Groom with Brother Isaac Mintah</li>
-    <li>Bride with Isaac Mintah</li>
-    <li>Solo Portrait of Groom</li>
-    <li>Solo Portrait of Bride</li>
-</ul>
-<div class="download-link">
-        <p>Download Our Digital <a href="https://i.postimg.cc/kGRbtF5T/Forstrah-page-0001.jpg" target="_blank">Invite Image</a></p>
-</div>
-    <div class="footer">Created by: Tambo Forster (Groom)
-    
-    | All Rights Reserved 2025</div>
+        <h2>Special Performances & Activities</h2>
+        <ul>
+            <li><strong>Special Solo Performance:</strong> Mrs. Emmanuella Osei</li>
+            <li>✅ Cocktail Bar Opens</li>
+            <li><strong>Entertainment & Music</strong></li>
+            <li><strong>Vote of Thanks:</strong> Mrs. Esther Tse</li>
+        </ul>
+
+        <h2>Order of Photography</h2>
+        <ul>
+            <li>Bridal Team</li>
+            <li>Bride & Groom with Both Families</li>
+            <li>Bride & Groom with Church Officials</li>
+            <li>Both Families Together</li>
+            <li>Members of the Church of Pentecost (Sekondi)</li>
+            <li>Members of the Church of Pentecost (Bumbula)</li>
+            <li>Members of Christian Faith Church (Adiembra)</li>
+            <li>Staff of Sekondi Presby Basic Schools</li>
+            <li>Staff of Obinnyimokyena D.A. School</li>
+            <li>Mega Church Choir (Adiembra CFCI)</li>
+            <li>Hopsan 2022 Batch</li>
+            <li>Francan 2020 Batch</li>
+            <li>Nesmac-S-Tech-Press-Consult Associates</li>
+            <li>Friends of the Groom</li>
+            <li>Friends of the Bride</li>
+            <li>Bride with Siblings</li>
+            <li>Groom with Family</li>
+            <li>Groom with Sister & Mother</li>
+            <li>Bride with Sister & Mother</li>
+            <li>Groom with Brother Isaac Mintah</li>
+            <li>Bride with Isaac Mintah</li>
+            <li>Solo Portrait of Groom</li>
+            <li>Solo Portrait of Bride</li>
+        </ul>
+        <div class="download-link">
+            <p>Download Our Digital <a href="https://i.postimg.cc/kGRbtF5T/Forstrah-page-0001.jpg" target="_blank">Invite Image</a></p>
+        </div>
+    </div>
+
+    <!-- Like and View Buttons -->
+    <div class="buttons">
+        <div>
+            <img src="https://cdn3.iconfinder.com/data/icons/faticons/32/view-01-1024.png" alt="View Icon">
+            <span>8K</span>
+        </div>
+
+        <div>
+            <span>7.5K</span>
+            <img src="https://www.pngall.com/wp-content/uploads/5/Like-Button-PNG-HD-Image.png" alt="Like Button">
+        </div>
+    </div>
+
+    <!-- Footer Content -->
+    <div class="footer">
+        <p class="footer-text">Created by: Tambo Forster Mawuli (Groom)<br>
+ | All Rights Reserved 2025</p>
+    </div>
 </body>
 </html>
